@@ -17,5 +17,11 @@ namespace tabuleiro
             Colunas = colunas;
             Pecas = new Peca[linhas,colunas];
         }
+
+        //retorna a linha e a coluna da peça na hora que imprimimos o tabuleiro na tela
+        public Peca Peca(int linha, int coluna)
+        {
+            return Pecas[linha,coluna];
+        }
     }
 }
