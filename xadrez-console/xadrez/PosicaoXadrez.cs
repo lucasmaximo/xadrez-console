@@ -14,7 +14,6 @@ namespace xadrez
             Linha = linha;
         }
 
-        //converte as posições de uma matriz nas posições do tabuleiro de xadrez
         public Posicao ToPosicao()
         {
             return new Posicao(8 - Linha, Coluna - 'a');

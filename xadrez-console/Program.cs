@@ -14,9 +14,8 @@ namespace xadrez_console
 
                 //coloca as peças no tabuleiro, apontando sua cor e sua posição
                 tabuleiro.ColocarPeca(new Torre(tabuleiro, Cor.Preta), new Posicao(0, 0));
-                tabuleiro.ColocarPeca(new Torre(tabuleiro, Cor.Preta), new Posicao(0, 7));
-                tabuleiro.ColocarPeca(new Torre(tabuleiro, Cor.Preta), new Posicao(0, 5));
-                tabuleiro.ColocarPeca(new Rei(tabuleiro, Cor.Branca), new Posicao(0, 3));
+                tabuleiro.ColocarPeca(new Torre(tabuleiro, Cor.Preta), new Posicao(0, 9));
+                tabuleiro.ColocarPeca(new Rei(tabuleiro, Cor.Preta), new Posicao(0, 2));
 
                 //imprimindo o tabuleiro na tela
                 Tela.ImprimirTabuleiro(tabuleiro);
