@@ -18,10 +18,17 @@ namespace tabuleiro
             Pecas = new Peca[linhas,colunas];
         }
 
-        //retorna a linha e a coluna da peça na hora que imprimimos o tabuleiro na tela
+        //retorna a peça ou o espaço vazio dentro da matriz de peças quando imprimimos o tabuleiro na tela
         public Peca Peca(int linha, int coluna)
         {
             return Pecas[linha,coluna];
+        }
+
+        //coloca uma peça dentro da matriz de peças do tabuleiro e atribui a posição àquela peça
+        public void ColocarPeca(Peca peca, Posicao posicao)
+        {
+            Pecas[posicao.Linha, posicao.Coluna] = peca;
+            peca.Posicao = posicao;
         }
     }
 }
